@@ -30,22 +30,17 @@
 
 
 ### 📊 GitHub Stats:  
-![Abdulwasie's GitHub Stats](https://github-readme-stats.vercel.app/api?username=YOUR-USERNAME&show_icons=true&theme=radical)  
+![Abdulwasie's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Abdulwasiee&show_icons=true&theme=radical)  
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR-USERNAME&layout=compact&theme=radical)  
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Abdulwasiee&layout=compact&theme=radical)  
 
-![GitHub Streak](https://streak-stats.demolab.com/?user=YOUR-USERNAME&theme=radical)  
+![GitHub Streak](https://streak-stats.demolab.com/?user=Abdulwasiee&theme=radical)  
 
 ---
 
 ### 🗂️ Contributions:  
-![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=YOUR-USERNAME&theme=radical)  
+![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Abdulwasiee&theme=radical)  
 
 ---
 
-### ☕ Berihu's Coffee  
-I also run **Berihu's Coffee** ☕, selling delicious packed roasted coffee. [Check it out!](#)  
 
----
-
-*“Code, coffee, and a little chaos ☕💻”*  
