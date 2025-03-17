@@ -23,11 +23,10 @@
 ![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
 ![NPM](https://img.shields.io/badge/NPM-CB3837?style=for-the-badge&logo=npm&logoColor=white)
 ![REST API](https://img.shields.io/badge/REST%20API-FF6F00?style=for-the-badge&logo=api&logoColor=white)
+
 ### 📈 Contribution Graph:
 
-![Abdulwasie's Contribution Graph](https://github-readme-contribution-graph.vercel.app/api/graph?username=Abdulwasiee&theme=radical)
-![Abdulwasie's Contribution Graph](https://github-readme-contribution-graph.vercel.app/api/graph?username=Abdulwasiee&theme=radical)
-
+![Abdulwasie's Contribution Graph](https://github-readme-activity-graph.vercel.app/graph?username=Abdulwasiee&theme=radical)
 
 ### 📊 GitHub Stats:
 
@@ -50,4 +49,3 @@
 <!-- Top Contributions will be automatically updated by the GitHub Action -->
 
 ---
-
