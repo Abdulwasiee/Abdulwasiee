@@ -23,6 +23,8 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install requests
+          sudo apt-get update
+          sudo apt-get install -y jq  # Install jq
 
       - name: Fetch repository data
         id: fetch-data
