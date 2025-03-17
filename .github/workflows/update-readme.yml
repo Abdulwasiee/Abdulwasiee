@@ -1,1 +1,76 @@
+name: Update README
 
+on:
+  schedule:
+    # Runs every day at midnight UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Fetch repository data
+        id: fetch-data
+        run: |
+          # Fetch top repositories (sorted by stars)
+          repos=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            "https://api.github.com/users/Abdulwasiee/repos?sort=stars&per_page=5" | \
+            jq -r '.[] | "- [\(.name)](\(.html_url)) - \(.description)"')
+
+          # Fetch recent contributions (sorted by updated date)
+          contributions=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            "https://api.github.com/users/Abdulwasiee/events" | \
+            jq -r '.[] | select(.type == "PushEvent" or .type == "PullRequestEvent") | "- [\(.repo.name)](https://github.com/\(.repo.name)) - \(.created_at)"' | \
+            head -n 5)
+
+          # Set outputs for the workflow
+          echo "repos=$repos" >> $GITHUB_OUTPUT
+          echo "contributions=$contributions" >> $GITHUB_OUTPUT
+
+      - name: Update README
+        run: |
+          # Replace placeholders in README with fetched data
+          sed -i '/<!-- Featured Projects -->/,/<!-- End Featured Projects -->/{
+            /<!-- Featured Projects -->/{
+              r /dev/stdin
+            }
+            d
+          }' README.md <<EOF
+<!-- Featured Projects -->
+${{ steps.fetch-data.outputs.repos }}
+<!-- End Featured Projects -->
+EOF
+
+          sed -i '/<!-- Top Contributions -->/,/<!-- End Top Contributions -->/{
+            /<!-- Top Contributions -->/{
+              r /dev/stdin
+            }
+            d
+          }' README.md <<EOF
+<!-- Top Contributions -->
+${{ steps.fetch-data.outputs.contributions }}
+<!-- End Top Contributions -->
+EOF
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add README.md
+          git commit -m "Update README with dynamic content"
+          git push
