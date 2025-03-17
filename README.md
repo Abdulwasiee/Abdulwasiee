@@ -40,12 +40,12 @@
 
 ### 🗂️ Featured Projects:
 
-<!-- Featured Projects will be automatically updated by the GitHub Action -->
-
----
+<!-- Featured Projects -->
+<!-- End Featured Projects -->
 
 ### 🛠️ Top Contributions:
 
-<!-- Top Contributions will be automatically updated by the GitHub Action -->
+<!-- Top Contributions -->
+<!-- End Top Contributions -->
 
 ---
