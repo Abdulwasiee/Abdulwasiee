@@ -26,6 +26,8 @@
 ### 📈 Contribution Graph:
 
 ![Abdulwasie's Contribution Graph](https://github-readme-contribution-graph.vercel.app/api/graph?username=Abdulwasiee&theme=radical)
+![Abdulwasie's Contribution Graph](https://github-readme-contribution-graph.vercel.app/api/graph?username=Abdulwasiee&theme=radical)
+
 
 ### 📊 GitHub Stats:
 
