@@ -1,5 +1,15 @@
-# 💫 About Me:
-👋 Hi there, I'm Abdulwasie! 👨‍💻<br>💡 "I'm a Full-Stack Developer with an Electrical and Computer Engineering ⚡ background. I enjoy building web applications 🌐 that are user-friendly and efficient. My expertise lies in React.js ⚛️ for front-end development and Node.js 🌳 with Express 🚀 for back-end systems."<br><br>🔗 "Leveraging my engineering background, I strive to merge hardware 💾 and software 💻 by integrating my Electrical and Computer Engineering knowledge with programming. I am passionate about creating solutions that bridge both domains, addressing complex problems through integrated systems."<br><br>🚀 "I am continually exploring new technologies 🛠️, eager to learn 📚, and committed to continuous growth 
+# 💫 About Me
+
+👋 Hi, I'm **Abdulwasie** — a Full-Stack Developer with a background in **Electrical and Computer Engineering**.
+
+💡 I build web apps that are fast, user-friendly, and efficient. I specialize in:
+- ⚛️ Frontend: React.js
+- 🌳 Backend: Node.js & Express
+
+🔗 I love bridging the gap between hardware and software — combining my engineering knowledge with code to solve real-world problems.
+
+🚀 Always learning. Always building. Always leveling up.
+
 
 
 ## 🌐 Socials:
